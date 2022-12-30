@@ -82,3 +82,30 @@ body {
     height: 80px;
     background: conic-gradient(transparent 50%, rgba(0, 174, 255, 0.5));
 }
+.circle.inner::after{
+    left: 38px;
+    height: 40px;
+    background: #0088ff;
+}
+.participles{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 150px;
+}
+.participles div{
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 10px;
+    transform: scale(0.5);
+    opacity: 0.1;
+}
+.participles div:nth-child(1){
+    top: 50%;
+    left: 0%;
+    background: #c15b10;
+    
+}
