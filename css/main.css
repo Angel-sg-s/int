@@ -107,5 +107,12 @@ body {
     top: 50%;
     left: 0%;
     background: #c15b10;
-    
+    box-shadow: 0 0 18px 5px #c15b10;
+    animation-delay: 1750ms;
+}
+.participles div:nth-child(2){
+    top: 100%;
+    left: 20%;
+    background: #c71780;
+    box-shadow: 0 0 18px 5px #c7c7c7;
 }
