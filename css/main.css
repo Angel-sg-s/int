@@ -35,4 +35,8 @@ h1 .ring {
     height: 100px;
     border-radius: 50px;
     display: inline-block;
+    border: 12px solid #ff0099;
+    line-height: .8;
+    margin-right: 8px;
+    animation: rotate 5s alternate infinite;
 }
