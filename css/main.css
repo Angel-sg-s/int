@@ -40,7 +40,8 @@ h1 .ring {
     margin-right: 8px;
     animation: rotate 5s alternate infinite;
 }
-h1 .ring::before{
+
+h1 .ring::before {
     content: '';
     position: absolute;
     width: 55px;
@@ -49,7 +50,8 @@ h1 .ring::before{
     border: 11px solid #00a1ff;
     animation: rotate 4s alternate infinite;
 }
-h1 .ring::after{
+
+h1 .ring::after {
     content: '';
     position: absolute;
     top: 11px;
@@ -58,5 +60,27 @@ h1 .ring::after{
     height: 35px;
     border-radius: 50px;
     border: 10px solid #ff8d00;
-    animation:  rotate 3s alternate infinite;
+    animation: rotate 3s alternate infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    25% {
+        transform: rotate3d(1, 1, 1, 90deg);
+    }
+
+    50% {
+        transform: rotate3d(1, 1, 1, 270deg);
+    }
+
+    75% {
+        transform: rotate3d(1, 1, 1, 180deg);
+    }
+
+    100% {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
 }
