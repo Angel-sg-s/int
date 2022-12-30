@@ -40,3 +40,12 @@ h1 .ring {
     margin-right: 8px;
     animation: rotate 5s alternate infinite;
 }
+h1 .ring::before{
+    content: '';
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    border: 11px solid #00a1ff;
+    animation: rotate 4s alternate infinite;
+}
