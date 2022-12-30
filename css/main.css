@@ -63,3 +63,8 @@ body {
     height: 100px;
     background: #ffa500;
 }
+.circle.mid{
+    width: 150px;
+    height: 150px;
+    background: conic-gradient(transparent 60%, rgba(255,255,255,.5));
+}
