@@ -11,4 +11,12 @@ body{
     align-items: center;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+h1{
+    font-size: 120px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    text-transform: uppercase;
 }
