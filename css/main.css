@@ -32,16 +32,34 @@ body {
     border-radius: 20px;
 }
 
-@keyframes rotate{
-    100%{
+@keyframes rotate {
+    100% {
         transform: rotate(360deg);
     }
 }
 
-.circle{
+.circle {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     border-radius: 50%;
+}
+
+.circle::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 5px;
+}
+
+.circle.outer {
+    width: 200px;
+    height: 200;
+    background: conic-gradient(transparent 55%, rgba(255, 131, 0, .5));
+}
+.circle.outer::after{
+    left: 98px;
+    height: 100px;
+    background: #ffa500;
 }
