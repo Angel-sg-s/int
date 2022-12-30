@@ -1,28 +1,47 @@
-*{box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
-html, body{
+html,
+body {
     margin: 0;
     height: 100%;
 }
-body{
+
+body {
     background: #1b1c23;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.box{
+
+.box {
     position: relative;
     animation: 1.2s rotate linear infinite;
 }
 
-.box::after{
+.box::after {
     content: '';
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 10px;
     height: 10px;
     background: #faf4ff;
     border-radius: 20px;
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
 }
