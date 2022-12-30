@@ -1,24 +1,27 @@
-*{box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
-html, body{
+html,
+body {
     margin: 0;
     height: 100%;
 }
 
-body{
-    background:#1b1c23 ;
+body {
+    background: #1b1c23;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 /* Design */
-.box
-{
+.box {
     position: relative;
     animation: 1.2s rotate linear infinite;
 }
-.box::after
-{
+
+.box::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -29,78 +32,83 @@ body{
     background: #faf4ff;
     border-radius: 20px;
 }
+
 /* Animation Circle */
-@keyframes rotate{
-    100%{
+@keyframes rotate {
+    100% {
         transform: rotate(360deg);
     }
 }
+
 /* Circle */
-.circle 
-{
+.circle {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
 }
-.circle::after
-{
+
+.circle::after {
     content: '';
     position: absolute;
     left: 50%;
     width: 5px;
 }
+
 /* One animation */
-.circle.outer{
+.circle.outer {
 
     width: 200px;
     height: 200px;
-    background: conic-gradient(transparent 55%, rgba(255,131,0,.5));
+    background: conic-gradient(transparent 55%, rgba(255, 131, 0, .5));
 }
-.circle.outer::after
-{
+
+.circle.outer::after {
     left: 98px;
     height: 100px;
     background: #ffa500;
 }
+
 /* Two Animation */
-.circle.mid{
+.circle.mid {
 
     width: 150px;
     height: 150px;
-    background: conic-gradient(transparent 60%, rgba(255,255,255,.5));
+    background: conic-gradient(transparent 60%, rgba(255, 255, 255, .5));
 }
-.circle.mid::after
-{
+
+.circle.mid::after {
     left: 73px;
     height: 40px;
     background: #faf4ff;
 }
+
 /* Three animation */
-.circle.inner{
+.circle.inner {
 
     width: 80px;
     height: 80px;
     background: conic-gradient(transparent 50%, rgba(0, 174, 255, 0.5));
 }
-.circle.inner::after{
+
+.circle.inner::after {
     left: 38px;
     height: 40px;
     background: #0088ff;
 }
+
 /* Particles Animation */
-.particles
-{
+.particles {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 150px;
     height: 150px;
 }
-.particles div
-{
+
+.particles div {
     position: absolute;
     width: 4px;
     height: 4px;
@@ -108,8 +116,8 @@ body{
     transform: scale(0.5);
     opacity: 0.1;
 }
-.particles div:nth-child(1)
-{
+
+.particles div:nth-child(1) {
     top: 50%;
     left: 0%;
     background: #c15b10;
@@ -117,8 +125,8 @@ body{
     animation: 0.6s blink infinite alternate;
     animation-delay: 1750ms;
 }
-.particles div:nth-child(2)
-{
+
+.particles div:nth-child(2) {
     top: 100%;
     left: 20%;
     background: #c71780;
@@ -126,8 +134,8 @@ body{
     animation: 0.6s blink infinite alternate;
     animation-delay: 1400ms;
 }
-.particles div:nth-child(3)
-{
+
+.particles div:nth-child(3) {
     top: 80%;
     left: 90%;
     background: #16b502;
@@ -135,8 +143,8 @@ body{
     animation: 0.6s blink infinite alternate;
     animation-delay: 1050ms;
 }
-.particles div:nth-child(4)
-{
+
+.particles div:nth-child(4) {
     top: 35%;
     left: 100%;
     background: #32c8c8;
@@ -144,8 +152,8 @@ body{
     animation: 0.6s blink infinite alternate;
     animation-delay: 700ms;
 }
-.particles div:nth-child(5)
-{
+
+.particles div:nth-child(5) {
     top: 15%;
     left: 55%;
     background: #dcdc3c;
@@ -153,11 +161,13 @@ body{
     animation: 0.6s blink infinite alternate;
     animation-delay: 300ms;
 }
+
 /* Animation */
-@keyframes blink{
-    100%{
+@keyframes blink {
+    100% {
         transform: scale(1);
         opacity: 1;
     }
 }
+
 /* @bastndev */
