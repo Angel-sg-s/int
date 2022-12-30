@@ -49,3 +49,14 @@ h1 .ring::before{
     border: 11px solid #00a1ff;
     animation: rotate 4s alternate infinite;
 }
+h1 .ring::after{
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    border: 10px solid #ff8d00;
+    animation:  rotate 3s alternate infinite;
+}
