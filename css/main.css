@@ -11,6 +11,11 @@ body{
     justify-content: center;
 }
 .box{
+    position: relative;
+    animation: 1.2s rotate linear infinite;
+}
+
+.box::after{
     content: '';
     position: relative;
     top: 50%;
