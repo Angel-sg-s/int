@@ -58,13 +58,27 @@ body {
     height: 200;
     background: conic-gradient(transparent 55%, rgba(255, 131, 0, .5));
 }
-.circle.outer::after{
+
+.circle.outer::after {
     left: 98px;
     height: 100px;
     background: #ffa500;
 }
-.circle.mid{
+
+.circle.mid {
     width: 150px;
     height: 150px;
-    background: conic-gradient(transparent 60%, rgba(255,255,255,.5));
+    background: conic-gradient(transparent 60%, rgba(255, 255, 255, .5));
+}
+
+.circle.mid::after {
+    left: 73px;
+    height: 40px;
+    background: #faf4ff;
+}
+
+.circle.inner {
+    width: 80px;
+    height: 80px;
+    background: conic-gradient(transparent 50%, rgba(0, 174, 255, 0.5));
 }
