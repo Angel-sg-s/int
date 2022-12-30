@@ -118,3 +118,38 @@ body {
     animation: 0.6s blink infinite alternate;
     animation-delay: 1400ms;
 }
+.particles div:nth-child(3)
+{
+    top: 80%;
+    left: 90%;
+    background: #16b502;
+    box-shadow: 0 0 18px 5px #16b502;
+    animation: 0.6s blink infinite alternate;
+    animation-delay: 1050ms;
+}
+.particles div:nth-child(4)
+{
+    top: 35%;
+    left: 100%;
+    background: #32c8c8;
+    box-shadow: 0 0 18px 5px #32c8c8;
+    animation: 0.6s blink infinite alternate;
+    animation-delay: 700ms;
+}
+.particles div:nth-child(5)
+{
+    top: 15%;
+    left: 55%;
+    background: #dcdc3c;
+    box-shadow: 0 0 18px 5px #dcdc3c;
+    animation: 0.6s blink infinite alternate;
+    animation-delay: 300ms;
+}
+/* Animation */
+@keyframes blink{
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/* @bastndev */
